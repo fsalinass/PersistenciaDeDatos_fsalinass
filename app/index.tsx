@@ -1,13 +1,33 @@
-import { Text, View } from "react-native";
-import "../global.css";
+import { Redirect } from 'expo-router';
 
-export default function Index() {
-  return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold font-work-black text-blue-500">
-        Welcome to Nativewind!
-      </Text>
-    </View>
-  );
+const App=()=>{
+return <Redirect href="/(stack)/home" />;
+  /*
+    return(
+      <SafeAreaView>
+
+  <View className="mt-6 mx-2.5">
+        <Text className="text-xl font-bold text-green-500 ">
+        Welcom tsdsdoivewi!
+        </Text>
+       
+        <Text className="text-2xl font-work-black">
+          otro texto
+        </Text>
+        <Text className="text-2xl font-work-medium">
+          otro texto
+        </Text>
+        <Text className="text-2xl font-work-light">
+          otro texto
+        </Text>
+     
+     
+      
+        </View>
+      </SafeAreaView>
+       
+     
+     
+    ) */
 }
-
+export default App
